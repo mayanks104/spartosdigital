@@ -16,13 +16,15 @@ const ContactFormComponent = ({ onClose }: { onClose?: () => void }) => {
   const [formData, setFormData] = useState<ContactForm>(initialFormState);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{ success?: boolean; message?: string }>({});
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupMessage, setPopupMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
     const { error } = await supabase
-      .from('contact_submissions')
+      .from('leads')
       .insert([
         {
           name: formData.name,
@@ -39,8 +41,9 @@ const ContactFormComponent = ({ onClose }: { onClose?: () => void }) => {
     if (error) {
       setSubmitStatus({ success: false, message: error.message });
     } else {
-      setSubmitStatus({ success: true, message: 'Submission successful!' });
-      alert('Thank you for your message. We\'ll get back to you soon!'); 
+      setSubmitStatus({ success: true, message: 'Form submitted successfully!' });
+      setPopupMessage('Form submitted successfully!');
+      setShowPopup(true);
       if (onClose) onClose();
       setFormData(initialFormState);
     }
@@ -51,6 +54,10 @@ const ContactFormComponent = ({ onClose }: { onClose?: () => void }) => {
       ...prev,
       [e.target.name]: e.target.value
     }));
+  };
+
+  const handlePopupClose = () => {
+    setShowPopup(false);
   };
 
   return (
@@ -70,6 +77,15 @@ const ContactFormComponent = ({ onClose }: { onClose?: () => void }) => {
       {submitStatus.message && (
         <div className={`p-4 mb-6 rounded ${submitStatus.success ? 'bg-green-500/20 text-green-500' : 'bg-red-500/20 text-red-500'}`}> 
           {submitStatus.message}
+        </div>
+      )}
+
+      {showPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white rounded-lg p-4">
+            <p className="text-lg font-medium">{popupMessage}</p>
+            <button onClick={handlePopupClose} className="text-gray-400 hover:text-black mt-4">Close</button>
+          </div>
         </div>
       )}
 

@@ -40,10 +40,10 @@ const Hero = ({ onGetStarted }: { onGetStarted: () => void }) => {
 
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { value: '10+', label: 'Years Experience' },
-            { value: '250+', label: 'Projects Completed' },
+            { value: '5+', label: 'Years Experience' },
+            { value: '50+', label: 'Projects Completed' },
             { value: '99%', label: 'Client Satisfaction' },
-            { value: '15+', label: 'Industry Awards' }
+            { value: '500+', label: 'ROI-Optimized Campaigns' }
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-green-500 mb-2">{stat.value}</div>

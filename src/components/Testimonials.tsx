@@ -9,7 +9,7 @@ const testimonials = [
     content: 'Spartos Digital transformed our digital presence and helped scale our operations globally. Their expertise in app development and commitment to quality is unmatched.'
   },
   {
-    name: 'Nishant',
+    name: 'Suraj',
     position: 'Marketing Manager',
     company: 'Healthcare',
     image: 'https://png.pngtree.com/png-clipart/20230823/original/pngtree-hospital-logo-icon-abstract-alliance-picture-image_8313149.png',

@@ -110,7 +110,62 @@ const serviceDetails = {
         icon: <BarChart className="w-8 h-8 text-green-500" />
       }
     ]
+  }, 
+  'saas-solutions': {
+    title: 'SaaS Solutions',
+    description: 'Scalable cloud-based software solutions for modern businesses.',
+    hero: 'https://images.unsplash.com/photo-1544197150-b99a580bb7c6',
+    overview: 'We build robust, scalable, and secure SaaS platforms that empower businesses to streamline operations, enhance customer experience, and drive growth. Our expert team ensures seamless integration, high availability, and future-proof architecture.',
+    expertise: [
+      'Multi-Tenant Architecture',
+      'Cloud-Native Solutions',
+      'API-First Development',
+      'AI & Data-Driven Platforms',
+      'Subscription & Billing Management',
+      'Enterprise SaaS Solutions'
+    ],
+    technologies: [
+      'AWS & Azure',
+      'Node.js',
+      'React & Angular',
+      'Python & Django',
+      'Kubernetes',
+      'MongoDB & PostgreSQL'
+    ],
+    processSteps: [
+      {
+        title: 'Discovery & Strategy',
+        description: 'Understanding your business needs and defining a scalable SaaS architecture.',
+        icon: <Target className="w-8 h-8 text-blue-500" />
+      },
+      {
+        title: 'UI/UX Design & Prototyping',
+        description: 'Crafting seamless user experiences with intuitive design.',
+        icon: <Code className="w-8 h-8 text-blue-500" />
+      },
+      {
+        title: 'Development & API Integration',
+        description: 'Building scalable, secure, and API-driven SaaS solutions.',
+        icon: <Zap className="w-8 h-8 text-blue-500" />
+      },
+      {
+        title: 'Security & Compliance',
+        description: 'Ensuring enterprise-grade security and regulatory compliance.',
+        icon: <Shield className="w-8 h-8 text-blue-500" />
+      },
+      {
+        title: 'Deployment & Cloud Scaling',
+        description: 'Deploying on cloud infrastructure with auto-scaling capabilities.',
+        icon: <Rocket className="w-8 h-8 text-blue-500" />
+      },
+      {
+        title: 'Maintenance & Continuous Improvement',
+        description: 'Providing ongoing updates, monitoring, and feature enhancements.',
+        icon: <Users className="w-8 h-8 text-blue-500" />
+      }
+    ]
   },
+
   'seo-optimization': {
     title: 'SEO Optimization',
     description: 'Boost your organic visibility and search rankings.',
@@ -459,6 +514,10 @@ const ServiceDetail = () => {
     );
   }
 
+  const onGetStarted = () => {
+    // Add your logic here
+  };
+
   return (
     <div className="min-h-screen bg-black pt-16">
       {/* Hero Section */}
@@ -543,13 +602,13 @@ const ServiceDetail = () => {
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
             Let's discuss how we can help you achieve your goals with our {service.title.toLowerCase()} services.
           </p>
-          <a
-            href="/contact"
+          <button
+            onClick={() => navigate('/contact')}
             className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-green-500 hover:bg-green-400 transition-colors"
           >
             Contact Us
             <ArrowRight className="ml-2 h-5 w-5" />
-          </a>
+          </button>
         </div>
       </section>
     </div>
