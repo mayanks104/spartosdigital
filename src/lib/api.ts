@@ -132,7 +132,7 @@ export const fetchCaseStudyDetail = async (id: string) => {
         quote: 'The results achieved through their Google Ads optimization were remarkable.',
         name: 'Marketing Director',
         position: 'Healthcare Industry',
-        avatar: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2'
+        avatar: 'https://cdn-icons-png.flaticon.com/512/4003/4003833.png'
       }
     },
     '2': {
@@ -197,7 +197,7 @@ export const fetchCaseStudyDetail = async (id: string) => {
         quote: 'Their app marketing expertise helped us achieve our user acquisition goals efficiently.',
         name: 'Product Manager',
         position: 'Entertainment Industry',
-        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e'
+        avatar: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAZlBMVEX///8KCgoAAACPj4+Kior29varq6t1dXVlZWU9PT3b29vPz89aWlqYmJi8vLwFBQWCgoLh4eEqKipDQ0Oenp5fX197e3vu7u4SEhI2NjZKSkqzs7MiIiJPT0+lpaVUVFQaGhrFxcX76ExiAAAG7UlEQVR4nO2c65aqOgyAMVBlREEUAW8z8v4veZpyEbBpC0I3ax3zaxwVP9I0t7Y4zle+8pWvfMW+MJbFQbhOXM9zk3UYxBlj/xRoGybpI4ee5I80Cbf/godlN/90FxCrnoh/3k/+LbOrsmD/kPL0yB77wBZRnFxyFU+bLL8ksQWkcMNVEJkgoUT8w5twXiK2Pg0garhO6xmtawRSgzUTUngxsySZAFzmGMStPx6pxPKn9l2Z9xlSieVlUzIF1zG21JcIrtP5LTaBmkrhyppoHma7KdRUSgS7SYYwXE2kplJgNcE0XE81dA0VfOyz0qmZkCr9jOkwOZLAOnyAxM6zMHGq8+hJyDYzMXGqzVgqqZ66qe94qvM4Jqk9wX3jNnK4f0A1yq5SKdOlq3b/A6oRc3At/Tnoeb74+QHVYH8VSu0Fjjz9OHi18PT78gFU/w51kslji4B6mXnxEdQK8kFxkO3kv4VQ7HquJZBCCV6jEA67IY7BI+5faIo14sig4HgIb35kVoN55kwBdaMCqiNvUHAShV5opKsIjLO+7ErdpoAqgkqK7B0qWlXF56+Zqq6mZkUNXmVTSkOHHfcTG5c5mZljNR3ALa35cvZVL6JcYujgOo4LfFTYnxFUBEY1DlN4aQOoDdrTPXOyH7M5CL4JVKjqpYjhq6FWMqgnw/mJk+V4S3IDbRm5UJU7jHLUVFT//lY2+6pAG/8EVFzofeGiZ5LHvPZt1ZEartz+nm8jBLsgjus5FRr4K30MZCc1FLeAuJxXaM3SiQ9wX13QfJljpCs46fw6rajKDXCS+IR/4PDwJKEv5Uef/M3sgTZsUKFpVUUpiv9c6mJm8Ms/lIWud0MnGXpdcb2yM4PoPMHHqaixh1JVaiYqOsDTNPnZctMXUzBEvfFRjLVQkWYCEqVCFJmnPltucuhCnRvkhdrtNbe8UV0wphTFf4SFe72s+bTbQ5XrhhhtTRLmCFTd2oSyqBgjoonw0mkL1W0IKYwcaKKAIhwnlguKiNj+5JEHmHIGoq6y2CxdUDnQICdGj3uSgODta8opNSV0xXyfYfqshRJhlJA9NXoVVPR2fUhv67bgfGg8/uUpOix7g7IV9hQTe2igwO+lf3B8d8bFqo6N4O1dDhW7fAZQl64v9Ed59YxMOEsojLXdigJ++teKfxuldB21JggClYHedFC/fUeGUPH1ryWX13zoTCmmmSdwI6BIl1JDJTKoLdnygNTzDrHDEh6AfnRGReV6ZIKggaJ/CarEWN+foeLflkz1x0KtRGimKtvu5+7yXJ3Ogy1AUVkxFWMsQckjjbQhZQ9K2q4iXaclqIfMfTI6nFuBymVQpD+3AyX36Yq01Q6ULNEjchN7ULLsRVGu24GSOSpFKWQHSlYv0b7TEpTMe7pqKEwG1rNCuRIoun/H02A+XZMfrM5mhJL19BRQ5V0IPyKgojpz+qdQESadTg0FeVoU7hEsDB9VypTfgE0RB4WAirABW5Xncxu6ujsiRmwvoOpvFxDN7hJUvc7XvWx4AcBzxM05w/7a7M5TEWY6UHCMsZfOL3GdFkoWZvR9pJmhZAFZkbrYgZKlLookzwaUPMlTpMNWoKTpsKJwsAIlX+dWpAk2oOQlltZRzQslL0bpst0CFFW20w0OG1BUg1/XXZ4VimoFkU0zG1BU00zn02eFotqLumXfAVCvzl7dNHvr83U/TzZi1XneECh41Js8HluHHXb1K5KKblmTzf2hUOSqBrGFRtncV64f15nnO9R7y59a86Liq3IdWVWQXtwilkGx4LdvyfhmEb5JRkOpFoyopTW0xHJ69KCq5d9eJYRv3t9XuAIKSr20Ri1CVusd2MnvQOEGGrE5qJth4JuS7UIklHoRkl6u5fqNfd//4cVMC4q/8He7Wz/BHwilW67txb+X6nmpV7961lCn6h95Z/sZCsc8SofvKnNYuoXtbvUHJ78W3ItXiYcGi7vM0tabZ78lZ6xa/b7s0GVVf3fuXbsFoL1ZwmxvzDhpGa9+s0RbVU0DYQZp/4zB7oKXhSJUsZ5BivbKsskGnFZWjFDpu71+LmkHymjLQ5PrIdQcG9JxhbWBAt9oW2Wz2G8DynD72yto2IAy3ulZb6m0AGW+pbLefDo/1IDNp/UAzg81ZJtulevPDjVsQ7OTYV9obj81cOt3ucEPoW4Hb3I53ATU4E3yIjjNHPvGHH9KPz6epBJv5NUPAK3jKNMKT/VHHn06z2HktYw8zLPMY0+LPCDmLPIonbPMQ4fLPJ65zIOsyzzyu8zD0c4ij5E7yzxw7yzy0QQoC3yIA8oCH3fhLPPBICjLe4SKkAU+bEbI8h7LI2SBDzCqZGmPempkcQ/F+spXvvKV/6v8B7h2i0Z7XO3MAAAAAElFTkSuQmCC'
       }
     },
     '3': {
@@ -262,7 +262,7 @@ export const fetchCaseStudyDetail = async (id: string) => {
         quote: 'The digital marketing strategy transformed our online presence and user acquisition.',
         name: 'CEO',
         position: 'SaaS Industry',
-        avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80'
+        avatar: 'data:image/jpeg;base64,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'
       }
     },
     '4': {
@@ -327,7 +327,7 @@ export const fetchCaseStudyDetail = async (id: string) => {
         quote: 'Their strategic approach helped us significantly reduce our customer acquisition costs.',
         name: 'Product Lead',
         position: 'Fintech Industry',
-        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e'
+        avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2UvdgwD9zm9_uV5ZGjHVmUl7hanbhvrm7rw&s'
       }
     },
     '5': {
@@ -392,7 +392,7 @@ export const fetchCaseStudyDetail = async (id: string) => {
         quote: 'The improvement in lead quality has transformed our sales process.',
         name: 'Sales Director',
         position: 'Real Estate Industry',
-        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e'
+        avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVsahpDsV09Vd74RbDo2e4tS_LIA2meqAXBg&s'
       }
     }
   };

@@ -3,12 +3,13 @@ import { useParams } from 'react-router-dom';
 import { ArrowRight, ChevronRight, BarChart, Users, Target, Clock } from 'lucide-react';
 import { fetchCaseStudyDetail } from '../lib/api';
 import type { CaseStudyDetail } from '../types';
+import { useNavigate } from 'react-router-dom';
 
 const CaseStudyDetail = () => {
   const { id } = useParams<{ id: string }>();
   const [caseStudy, setCaseStudy] = useState<CaseStudyDetail | null>(null);
   const [loading, setLoading] = useState(true);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const loadCaseStudy = async () => {
       try {
@@ -186,13 +187,13 @@ const CaseStudyDetail = () => {
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
             Let's discuss how we can help you achieve similar results for your business.
           </p>
-          <a
-            href="/contact"
-            className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-green-500 hover:bg-green-400 transition-colors"
+          <button
+            onClick={() => navigate('/contact')}
+            className="inline-flex items-center px-8 py-4 border-2 border-green-500 text-base font-medium rounded-full text-black bg-green-500 hover:bg-transparent hover:text-green-500 transition-all duration-300"
           >
-            Start Your Project
+            Get Started
             <ArrowRight className="ml-2 h-5 w-5" />
-          </a>
+          </button>
         </div>
       </section>
     </div>
